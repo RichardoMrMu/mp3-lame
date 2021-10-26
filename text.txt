@@ -1,0 +1,694 @@
+Memory blocks currently allocated: 1, size: 63.9 KiB.
+Memory blocks allocated during the whole lifetime: 26428, size: 18.3 MiB.
+Memory blocks imported from other processes: 0, size: 0 B.
+Memory blocks exported to other processes: 0, size: 0 B.
+Total sample cache size: 0 B.
+Default sample spec: s16le 2ch 44100Hz
+Default channel map: front-left,front-right
+Default sink name: alsa_output.usb-0c76_MAONO_AU-BM10-00.analog-stereo
+Default source name: alsa_input.usb-0c76_MAONO_AU-BM10-00.analog-mono
+Memory blocks of type POOL: 1 allocated/13046 accumulated.
+Memory blocks of type POOL_EXTERNAL: 0 allocated/0 accumulated.
+Memory blocks of type APPENDED: 0 allocated/0 accumulated.
+Memory blocks of type USER: 0 allocated/0 accumulated.
+Memory blocks of type FIXED: 0 allocated/13382 accumulated.
+Memory blocks of type IMPORTED: 0 allocated/0 accumulated.
+27 module(s) loaded.
+    index: 0
+	name: <module-device-restore>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the volume/mute state of devices"
+		module.version = "11.1"
+    index: 1
+	name: <module-stream-restore>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the volume/mute/device state of streams"
+		module.version = "11.1"
+    index: 2
+	name: <module-card-restore>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore profile of cards"
+		module.version = "11.1"
+    index: 3
+	name: <module-augment-properties>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Augment the property sets of streams with additional static information"
+		module.version = "11.1"
+    index: 4
+	name: <module-switch-on-port-available>
+	argument: <>
+	used: -1
+	load once: no
+	properties:
+		
+    index: 5
+	name: <module-switch-on-connect>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Michael Terry"
+		module.description = "When a sink/source is added, switch to it or conditionally switch to it"
+		module.version = "11.1"
+    index: 6
+	name: <module-udev-detect>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Detect available audio hardware and load matching drivers"
+		module.version = "11.1"
+    index: 7
+	name: <module-alsa-card>
+	argument: <device_id="0" name="platform-70030000.hda" card_name="alsa_card.platform-70030000.hda" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes card_properties="module-udev-detect.discovered=1">
+	used: 0
+	load once: no
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "ALSA Card"
+		module.version = "11.1"
+    index: 9
+	name: <module-alsa-card>
+	argument: <device_id="1" name="platform-sound" card_name="alsa_card.platform-sound" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes card_properties="module-udev-detect.discovered=1">
+	used: 0
+	load once: no
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "ALSA Card"
+		module.version = "11.1"
+    index: 10
+	name: <module-bluetooth-policy>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Frédéric Dalleau, Pali Rohár"
+		module.description = "Policy module to make using bluetooth devices out-of-the-box easier"
+		module.version = "11.1"
+    index: 11
+	name: <module-bluetooth-discover>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "João Paulo Rechi Vita"
+		module.description = "Detect available Bluetooth daemon and load the corresponding discovery module"
+		module.version = "11.1"
+    index: 12
+	name: <module-bluez5-discover>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "João Paulo Rechi Vita"
+		module.description = "Detect available BlueZ 5 Bluetooth audio devices and load BlueZ 5 Bluetooth audio drivers"
+		module.version = "11.1"
+    index: 13
+	name: <module-native-protocol-unix>
+	argument: <>
+	used: -1
+	load once: no
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Native protocol (UNIX sockets)"
+		module.version = "11.1"
+    index: 14
+	name: <module-default-device-restore>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically restore the default sink and source"
+		module.version = "11.1"
+    index: 15
+	name: <module-rescue-streams>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "When a sink/source is removed, try to move its streams to the default sink/source"
+		module.version = "11.1"
+    index: 16
+	name: <module-always-sink>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Colin Guthrie"
+		module.description = "Always keeps at least one sink loaded even if it's a null one"
+		module.version = "11.1"
+    index: 17
+	name: <module-intended-roles>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Automatically set device of streams based on intended roles of devices"
+		module.version = "11.1"
+    index: 18
+	name: <module-suspend-on-idle>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "When a sink/source is idle for too long, suspend it"
+		module.version = "11.1"
+    index: 19
+	name: <module-console-kit>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Create a client for each ConsoleKit session of this user"
+		module.version = "11.1"
+    index: 20
+	name: <module-systemd-login>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Create a client for each login session of this user"
+		module.version = "11.1"
+    index: 21
+	name: <module-position-event-sounds>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Position event sounds between L and R depending on the position on screen of the widget triggering them."
+		module.version = "11.1"
+    index: 22
+	name: <module-role-cork>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Mute & cork streams with certain roles while others exist"
+		module.version = "11.1"
+    index: 23
+	name: <module-snap-policy>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Canonical Ltd"
+		module.description = "Ubuntu Snap policy management"
+		module.version = "11.1"
+    index: 24
+	name: <module-filter-heuristics>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Colin Guthrie"
+		module.description = "Detect when various filters are desirable"
+		module.version = "11.1"
+    index: 25
+	name: <module-filter-apply>
+	argument: <>
+	used: -1
+	load once: yes
+	properties:
+		module.author = "Colin Guthrie"
+		module.description = "Load filter sinks automatically when needed"
+		module.version = "11.1"
+    index: 26
+	name: <module-cli-protocol-unix>
+	argument: <>
+	used: -1
+	load once: no
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "Command line interface protocol (UNIX sockets)"
+		module.version = "11.1"
+    index: 27
+	name: <module-alsa-card>
+	argument: <device_id="2" name="usb-0c76_MAONO_AU-BM10-00" card_name="alsa_card.usb-0c76_MAONO_AU-BM10-00" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes card_properties="module-udev-detect.discovered=1">
+	used: 0
+	load once: no
+	properties:
+		module.author = "Lennart Poettering"
+		module.description = "ALSA Card"
+		module.version = "11.1"
+2 sink(s) available.
+    index: 1
+	name: <alsa_output.platform-sound.analog-stereo>
+	driver: <module-alsa-card.c>
+	flags: HARDWARE DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 9009
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max request: 0 KiB
+	max rewind: 0 KiB
+	monitor source: 2
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 185.76 ms
+	card: 2 <alsa_card.platform-sound>
+	module: 9
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = ""
+		alsa.id = "ADMAIF1 CIF ADMAIF1-0"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "tegra-snd-t210ref-mobile-rt565x"
+		alsa.long_card_name = "tegra-snd-t210ref-mobile-rt565x"
+		device.bus_path = "platform-sound"
+		sysfs.path = "/devices/sound/sound/card1"
+		device.form_factor = "internal"
+		device.string = "front:1"
+		device.buffering.buffer_size = "32768"
+		device.buffering.fragment_size = "16384"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "Built-in Audio Analog Stereo"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	ports:
+		analog-output: Analog Output (priority 9900, latency offset 0 usec, available: unknown)
+			properties:
+				
+	active port: <analog-output>
+  * index: 2
+	name: <alsa_output.usb-0c76_MAONO_AU-BM10-00.analog-stereo>
+	driver: <module-alsa-card.c>
+	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 9049
+	volume: front-left: 30419 /  46% / -20.00 dB,   front-right: 30419 /  46% / -20.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max request: 0 KiB
+	max rewind: 0 KiB
+	monitor source: 4
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	card: 3 <alsa_card.usb-0c76_MAONO_AU-BM10-00>
+	module: 27
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "2"
+		alsa.card_name = "MAONO AU-BM10"
+		alsa.long_card_name = "MAONO AU-BM10 at usb-70090000.xusb-3.2, full speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-70090000.xusb-usb-0:3.2:1.0"
+		sysfs.path = "/devices/70090000.xusb/usb1/1-3/1-3.2/1-3.2:1.0/sound/card2"
+		udev.id = "usb-0c76_MAONO_AU-BM10-00"
+		device.bus = "usb"
+		device.vendor.id = "0c76"
+		device.vendor.name = "JMTek, LLC."
+		device.product.id = "161b"
+		device.product.name = "MAONO AU-BM10"
+		device.serial = "0c76_MAONO_AU-BM10"
+		device.string = "front:2"
+		device.buffering.buffer_size = "352800"
+		device.buffering.fragment_size = "176400"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "MAONO AU-BM10 Analog Stereo"
+		alsa.mixer_name = "USB Mixer"
+		alsa.components = "USB0c76:161b"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	ports:
+		analog-output: Analog Output (priority 9900, latency offset 0 usec, available: unknown)
+			properties:
+				
+	active port: <analog-output>
+4 source(s) available.
+    index: 2
+	name: <alsa_output.platform-sound.analog-stereo.monitor>
+	driver: <module-alsa-card.c>
+	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 1000
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 185.76 ms
+	monitor_of: 1
+	card: 2 <alsa_card.platform-sound>
+	module: 9
+	properties:
+		device.description = "Monitor of Built-in Audio Analog Stereo"
+		device.class = "monitor"
+		alsa.card = "1"
+		alsa.card_name = "tegra-snd-t210ref-mobile-rt565x"
+		alsa.long_card_name = "tegra-snd-t210ref-mobile-rt565x"
+		device.bus_path = "platform-sound"
+		sysfs.path = "/devices/sound/sound/card1"
+		device.form_factor = "internal"
+		device.string = "1"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+    index: 3
+	name: <alsa_input.platform-sound.analog-stereo>
+	driver: <module-alsa-card.c>
+	flags: HARDWARE DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 9009
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 4.00 .. 185.76 ms
+	card: 2 <alsa_card.platform-sound>
+	module: 9
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = ""
+		alsa.id = "ADMAIF1 CIF ADMAIF1-0"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "tegra-snd-t210ref-mobile-rt565x"
+		alsa.long_card_name = "tegra-snd-t210ref-mobile-rt565x"
+		device.bus_path = "platform-sound"
+		sysfs.path = "/devices/sound/sound/card1"
+		device.form_factor = "internal"
+		device.string = "front:1"
+		device.buffering.buffer_size = "32768"
+		device.buffering.fragment_size = "16384"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "Built-in Audio Analog Stereo"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	ports:
+		analog-input: Analog Input (priority 10000, latency offset 0 usec, available: unknown)
+			properties:
+				
+	active port: <analog-input>
+    index: 4
+	name: <alsa_output.usb-0c76_MAONO_AU-BM10-00.analog-stereo.monitor>
+	driver: <module-alsa-card.c>
+	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 1040
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	monitor_of: 2
+	card: 3 <alsa_card.usb-0c76_MAONO_AU-BM10-00>
+	module: 27
+	properties:
+		device.description = "Monitor of MAONO AU-BM10 Analog Stereo"
+		device.class = "monitor"
+		alsa.card = "2"
+		alsa.card_name = "MAONO AU-BM10"
+		alsa.long_card_name = "MAONO AU-BM10 at usb-70090000.xusb-3.2, full speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-70090000.xusb-usb-0:3.2:1.0"
+		sysfs.path = "/devices/70090000.xusb/usb1/1-3/1-3.2/1-3.2:1.0/sound/card2"
+		udev.id = "usb-0c76_MAONO_AU-BM10-00"
+		device.bus = "usb"
+		device.vendor.id = "0c76"
+		device.vendor.name = "JMTek, LLC."
+		device.product.id = "161b"
+		device.product.name = "MAONO AU-BM10"
+		device.serial = "0c76_MAONO_AU-BM10"
+		device.string = "2"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+  * index: 5
+	name: <alsa_input.usb-0c76_MAONO_AU-BM10-00.analog-mono>
+	driver: <module-alsa-card.c>
+	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE 
+	priority: 9049
+	volume: mono: 52057 /  79% / -6.00 dB
+	        balance 0.00
+	base volume: 19944 /  30% / -31.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 1ch 44100Hz
+	channel map: mono
+	             Mono
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	card: 3 <alsa_card.usb-0c76_MAONO_AU-BM10-00>
+	module: 27
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "2"
+		alsa.card_name = "MAONO AU-BM10"
+		alsa.long_card_name = "MAONO AU-BM10 at usb-70090000.xusb-3.2, full speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-70090000.xusb-usb-0:3.2:1.0"
+		sysfs.path = "/devices/70090000.xusb/usb1/1-3/1-3.2/1-3.2:1.0/sound/card2"
+		udev.id = "usb-0c76_MAONO_AU-BM10-00"
+		device.bus = "usb"
+		device.vendor.id = "0c76"
+		device.vendor.name = "JMTek, LLC."
+		device.product.id = "161b"
+		device.product.name = "MAONO AU-BM10"
+		device.serial = "0c76_MAONO_AU-BM10"
+		device.string = "hw:2"
+		device.buffering.buffer_size = "176400"
+		device.buffering.fragment_size = "88200"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-mono"
+		device.profile.description = "Analog Mono"
+		device.description = "MAONO AU-BM10 Analog Mono"
+		alsa.mixer_name = "USB Mixer"
+		alsa.components = "USB0c76:161b"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	ports:
+		analog-input-mic: Microphone (priority 8700, latency offset 0 usec, available: unknown)
+			properties:
+				device.icon_name = "audio-input-microphone"
+	active port: <analog-input-mic>
+2 client(s) logged in.
+    index: 0
+	driver: <module-systemd-login.c>
+	owner module: 20
+	properties:
+		application.name = "Login Session 1"
+		systemd-login.session = "1"
+    index: 30
+	driver: <cli.c>
+	owner module: 26
+	properties:
+		application.name = "UNIX socket client"
+3 card(s) available.
+    index: 0
+	name: <alsa_card.platform-70030000.hda>
+	driver: <module-alsa-card.c>
+	owner module: 7
+	properties:
+		alsa.card = "0"
+		alsa.card_name = "tegra-hda"
+		alsa.long_card_name = "tegra-hda at 0x70038000 irq 81"
+		device.bus_path = "platform-70030000.hda"
+		sysfs.path = "/devices/70030000.hda/sound/card0"
+		device.form_factor = "internal"
+		device.string = "0"
+		device.description = "Built-in Audio"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	profiles:
+		output:hdmi-stereo: Digital Stereo (HDMI) Output (priority 5400, available: no)
+		output:hdmi-surround: Digital Surround 5.1 (HDMI) Output (priority 300, available: no)
+		output:hdmi-surround71: Digital Surround 7.1 (HDMI) Output (priority 300, available: no)
+		off: Off (priority 0, available: unknown)
+	active profile: <off>
+	ports:
+		hdmi-output-0: HDMI / DisplayPort (priority 5900, latency offset 0 usec, available: no)
+			properties:
+				device.icon_name = "video-display"
+    index: 2
+	name: <alsa_card.platform-sound>
+	driver: <module-alsa-card.c>
+	owner module: 9
+	properties:
+		alsa.card = "1"
+		alsa.card_name = "tegra-snd-t210ref-mobile-rt565x"
+		alsa.long_card_name = "tegra-snd-t210ref-mobile-rt565x"
+		device.bus_path = "platform-sound"
+		sysfs.path = "/devices/sound/sound/card1"
+		device.form_factor = "internal"
+		device.string = "1"
+		device.description = "Built-in Audio"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card"
+	profiles:
+		input:analog-mono: Analog Mono Input (priority 2, available: unknown)
+		input:analog-stereo: Analog Stereo Input (priority 60, available: unknown)
+		output:analog-mono: Analog Mono Output (priority 200, available: unknown)
+		output:analog-mono+input:analog-mono: Analog Mono Duplex (priority 202, available: unknown)
+		output:analog-mono+input:analog-stereo: Analog Mono Output + Analog Stereo Input (priority 260, available: unknown)
+		output:analog-stereo: Analog Stereo Output (priority 6000, available: unknown)
+		output:analog-stereo+input:analog-mono: Analog Stereo Output + Analog Mono Input (priority 6002, available: unknown)
+		output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (priority 6060, available: unknown)
+		off: Off (priority 0, available: unknown)
+	active profile: <output:analog-stereo+input:analog-stereo>
+	sinks:
+		alsa_output.platform-sound.analog-stereo/#1: Built-in Audio Analog Stereo
+	sources:
+		alsa_output.platform-sound.analog-stereo.monitor/#2: Monitor of Built-in Audio Analog Stereo
+		alsa_input.platform-sound.analog-stereo/#3: Built-in Audio Analog Stereo
+	ports:
+		analog-input: Analog Input (priority 10000, latency offset 0 usec, available: unknown)
+			properties:
+				
+		analog-output: Analog Output (priority 9900, latency offset 0 usec, available: unknown)
+			properties:
+				
+    index: 3
+	name: <alsa_card.usb-0c76_MAONO_AU-BM10-00>
+	driver: <module-alsa-card.c>
+	owner module: 27
+	properties:
+		alsa.card = "2"
+		alsa.card_name = "MAONO AU-BM10"
+		alsa.long_card_name = "MAONO AU-BM10 at usb-70090000.xusb-3.2, full speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "platform-70090000.xusb-usb-0:3.2:1.0"
+		sysfs.path = "/devices/70090000.xusb/usb1/1-3/1-3.2/1-3.2:1.0/sound/card2"
+		udev.id = "usb-0c76_MAONO_AU-BM10-00"
+		device.bus = "usb"
+		device.vendor.id = "0c76"
+		device.vendor.name = "JMTek, LLC."
+		device.product.id = "161b"
+		device.product.name = "MAONO AU-BM10"
+		device.serial = "0c76_MAONO_AU-BM10"
+		device.string = "2"
+		device.description = "MAONO AU-BM10"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	profiles:
+		input:analog-mono: Analog Mono Input (priority 2, available: unknown)
+		output:analog-stereo: Analog Stereo Output (priority 6000, available: unknown)
+		output:analog-stereo+input:analog-mono: Analog Stereo Output + Analog Mono Input (priority 6002, available: unknown)
+		output:iec958-stereo: Digital Stereo (IEC958) Output (priority 5500, available: unknown)
+		output:iec958-stereo+input:analog-mono: Digital Stereo (IEC958) Output + Analog Mono Input (priority 5502, available: unknown)
+		off: Off (priority 0, available: unknown)
+	active profile: <output:analog-stereo+input:analog-mono>
+	sinks:
+		alsa_output.usb-0c76_MAONO_AU-BM10-00.analog-stereo/#2: MAONO AU-BM10 Analog Stereo
+	sources:
+		alsa_output.usb-0c76_MAONO_AU-BM10-00.analog-stereo.monitor/#4: Monitor of MAONO AU-BM10 Analog Stereo
+		alsa_input.usb-0c76_MAONO_AU-BM10-00.analog-mono/#5: MAONO AU-BM10 Analog Mono
+	ports:
+		analog-input-mic: Microphone (priority 8700, latency offset 0 usec, available: unknown)
+			properties:
+				device.icon_name = "audio-input-microphone"
+		analog-output: Analog Output (priority 9900, latency offset 0 usec, available: unknown)
+			properties:
+				
+		iec958-stereo-output: Digital Output (S/PDIF) (priority 0, latency offset 0 usec, available: unknown)
+			properties:
+				
+0 sink input(s) available.
+0 source output(s) available.
+0 cache entrie(s) available.
